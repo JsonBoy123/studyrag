@@ -33,6 +33,7 @@
                     <form novalidate="novalidate" method="post" action="{{$base_url}}/app/login" id="form-auth"
                           data-form="{{$base_url}}{{($type == 'login') ? '/app/dashboard' : '/super-admin/dashboard'}}"
                           data-btn-id="btn-auth">
+                          @csrf
 
                         <div class="mb-3">
                             <label for="email" class="form-label">{{ __('Write Your Email') }}</label>

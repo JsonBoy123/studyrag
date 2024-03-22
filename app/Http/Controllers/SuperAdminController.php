@@ -27,8 +27,8 @@ class SuperAdminController extends BaseController
     }
     public function index()
     {
-        // return redirect()->route('/super-admin.dashboard');
-        return view('super-admin.dashboard');
+        return redirect()->route('/super-admin.dashboard');
+        // return view('super-admin.dashboard');
     }
 
     public function login()

@@ -144,9 +144,11 @@ class AppController extends BaseController
 
         add_activity($this->workspace_id, __('Logged in with email') . ':' . $request->email, $user->id);
 
-        return response([
-            'success' => true,
-        ]);
+        // return response([
+        //     'success' => true,
+        // ]);
+
+        return redirect()->route('app.dashboard');
 
     }
 

@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    <link rel="manifest" href="/assets/site.webmanifest">
-    <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+    <link rel="manifest" href="../assets/site.webmanifest">
+    <link rel="mask-icon" href="../assets/safari-pinned-tab.svg" color="#5bbad5">
 
     @if(!empty($super_settings['favicon']) && ($super_settings['favicon'] !== 'system/favicon.ico'))
         <link rel="shortcut icon" href="{{getUploadsUrl()}}/{{$super_settings['favicon']}}?v=3">
     @else
-        <link rel="shortcut icon" href="/assets/favicon.ico">
+        <link rel="shortcut icon" href="../assets/favicon.ico">
     @endif
 
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/assets/browserconfig.xml">
+    <meta name="msapplication-config" content="../assets/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="{{config('app.name')}}">
     <meta name="application-name" content="{{config('app.name')}}">
 
-    @inject('assets', 'App\Supports\AssetSupport')
+    @inject('assets', '\App\Supports\AssetSupport')
 
     @if(!empty($page_title))
         <title>{{$page_title}} | {{$super_settings['workspace_name'] ?? config('app.name')}}</title>

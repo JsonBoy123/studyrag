@@ -15,8 +15,8 @@ class AssetSupport
         }
 
 
-        return '<link rel="stylesheet" href="assets/'.$name.'.css?v='.$version_css.'">
-    <script type="module" src="assets/'.$name.'.js?v='.$version_js.'"></script>';
+        return '<link rel="stylesheet" href="../assets/'.$name.'.css?v='.$version_css.'">
+    <script type="module" src="../assets/'.$name.'.js?v='.$version_js.'"></script>';
 
     }
 
@@ -29,7 +29,7 @@ class AssetSupport
             $version_css = filemtime(base_path('assets/'.$name.'.css'));
         }
 
-        return '<link rel="stylesheet" href="assets/'.$name.'.css?v='.$version_css.'">';
+        return '<link rel="stylesheet" href="../assets/'.$name.'.css?v='.$version_css.'">';
     }
 
     public function js($name)
@@ -41,7 +41,7 @@ class AssetSupport
             $version_js = filemtime(base_path('assets/'.$name.'.js'));
         }
 
-        return '<script type="module" src="assets/'.$name.'.js?v='.$version_js.'"></script>';
+        return '<script type="module" src="../assets/'.$name.'.js?v='.$version_js.'"></script>';
     }
 
 }

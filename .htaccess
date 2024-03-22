@@ -5,7 +5,7 @@
     </IfModule>
 
     RewriteEngine On
-    RewriteBase /index.php
+    RewriteBase /studyraga/index.php
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
@@ -19,7 +19,7 @@
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ /index.php [L]
+    RewriteRule ^ /studyraga/index.php [L]
 </IfModule>
 
 # Disable index view
