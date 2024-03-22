@@ -185,7 +185,7 @@ class SystemController extends BaseController
 
                 $response = Http::withOptions([
                     'verify' => false,
-                ])->post('https://www.cloudonex.com/api/app-registration-flow',[
+                ])->post('http://localhost/studyraga/system/activate',[
                     'item_id' => config('app.item_id'),
                     'uid' => config('app.uid'),
                     'first_name' => $this->user->first_name,
